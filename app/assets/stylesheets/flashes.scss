@@ -1,0 +1,28 @@
+@import 'rounded-corners';
+
+.flash
+{
+   border: solid 2px;
+   margin: 1em;
+   padding: 1ex;
+   text-align: center;
+   @include rounded-corners(5px);
+}
+
+.flashes
+{
+   .notice
+   {
+      border-color: blue;
+      color: blue;
+      background: #fff9c4;
+   }
+
+   .error, .alert
+   {
+      border-color: yellow;
+      color: yellow;
+      background: black;
+   }
+}
+

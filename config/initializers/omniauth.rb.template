@@ -1,0 +1,4 @@
+Rails.application.config.middleware.use OmniAuth::Builder do
+  # https://developers.facebook.com/apps/326810364064001/summary?save=1
+    provider :facebook, 'FACEBOOK_KEY', 'FACEBOOK_SECRET'
+end
