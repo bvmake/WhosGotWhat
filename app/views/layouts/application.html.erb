@@ -8,7 +8,9 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render 'shared/flashes' %>
+
+<%= content_for?(:content) ? yield(:content) : yield %>
 
 </body>
 </html>
